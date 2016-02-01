@@ -126,15 +126,25 @@
 
 <script>
   // code here for above-problem
-  var changeText = document.getElementById("change-hello-to-goodbye-button");
-  console.dir(changeText);
+// var changeText = document.getElementById("change-hello-to-goodbye-button");
+//  console.dir(changeText);
+ 
+//  function changeTextBtn(){
+//      changeText.innerText = "Goodbye";
+//    }
+ 
+//   changeText.addEventListener('click',changeTextBtn);
 
-  function changeTextBtn() {
-      changeText.innerText = "Goodbye";
-  }
+var changeText = document.getElementById("message-to-change");
 
-  changeText.addEventListener('click', changeTextBtn);
-  // changeText.innerText = "Goodbye";
+var buttonPress = document.getElementById("change-hello-to-goodbye-button");
+
+function changeTextHello() {
+    changeText.innerText = "Goodbye";
+
+}
+
+buttonPress.addEventListener('click', changeTextHello);
 
 
 </script>
@@ -275,7 +285,7 @@
   function alertMe() {
       alert("Here's your popup!");
   }
-  
+
 </script>
  
 <div class="test"></div> 
