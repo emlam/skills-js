@@ -99,12 +99,14 @@
 
 <script>
   // code here for above problem
+
   var button = document.getElementById('popup-alert-button');
 
   function popupMsg() {
-    alert("Here's the popup you wanted! :)");
+      alert("Here's the popup you wanted! :)");
   }
-  button.addEventListener('click',popupMsg);
+
+  button.addEventListener('click', popupMsg);
 
 </script>
 
@@ -116,8 +118,8 @@
 <p>Change the word "hello" to "goodbye" when the button is pressed.</p>
 <p>(Don't get rid of the italics tag itself, though!)</p>
 
-<fieldset>
   <i id="message-to-change">hello</i>
+<fieldset>
   <button id="change-hello-to-goodbye-button">Turn <b>Hello</b> Into <b>Goodbye</b></button>
   <!-- Hey, look, that was another way to do a button - what might it be good for? -->
 </fieldset>
@@ -127,11 +129,11 @@
   var changeText = document.getElementById("change-hello-to-goodbye-button");
   console.dir(changeText);
 
-  function changeTextBtn(){
-    changeText.innerText = "Goodbye";
+  function changeTextBtn() {
+      changeText.innerText = "Goodbye";
   }
 
-  changeText.addEventListener('click',changeTextBtn);
+  changeText.addEventListener('click', changeTextBtn);
   // changeText.innerText = "Goodbye";
 
 
@@ -167,13 +169,13 @@
 
   var buttonPress = document.getElementById("prevent-form-submission-button");
 
-  function getAlert(evt){
-    evt.preventDefault();
-    alert("Here's your alert !");
+  function getAlert(evt) {
+      evt.preventDefault();
+      alert("Here's your alert !");
 
   }
 
-  buttonPress.addEventListener('click',getAlert);
+  buttonPress.addEventListener('click', getAlert);
 
 </script>
 
@@ -215,37 +217,35 @@
 // }
 
 
-
  function reverseString() {
-   var msg = "Porcupines are cute";
-   var msgArray = [];
-   // var newMsgArray = [];
-   var newMsg = "";
+    var msg = "Porcupines are cute";
+    var msgArray = [];
+    // var newMsgArray = [];
+    var newMsg = "";
 
-   // do some stuff here to reverse that string into a new variable
-   for (var k in msg){
-    console.log(msg[k]);
-    msgArray.push(msg[k]);
-    // console.log(msgArray);
-   }
+    // do some stuff here to reverse that string into a new variable
+    for (var k in msg) {
+        console.log(msg[k]);
+        msgArray.push(msg[k]);
+        // console.log(msgArray);
+    }
 
-   for (var i = msgArray.length-1;i>=0;
-    i--){
-    newMsg = newMsg + msgArray[i];
-    // console.log(newMsg);
-    // newMsgArray.push(msgArray[i]);
-   }
-   console.log(newMsg);
-   // var newMsg = "This should be the reversed string";
+    for (var i = msgArray.length - 1; i >= 0; i--) {
+        newMsg = newMsg + msgArray[i];
+        // console.log(newMsg);
+        // newMsgArray.push(msgArray[i]);
+    }
+    console.log(newMsg);
+    // var newMsg = "This should be the reversed string";
 
-   alert(newMsg);
- }
+    alert(newMsg);
+}
 
 // Here's a stub of event stuff you could use
-//
 
- var button = document.getElementById('reverse-string-button');
- button.addEventListener('click', reverseString);
+  var button = document.getElementById('reverse-string-button');
+  button.addEventListener('click', reverseString);
+
 </script>
 
 
@@ -270,11 +270,12 @@
 
 <script>
   // code here for above problem
-  $('.tricky-to-find').on('click',alertMe);
+  $('.tricky-to-find').on('click', alertMe);
 
-  function alertMe(){
-    alert("Here's your popup!");
+  function alertMe() {
+      alert("Here's your popup!");
   }
+  
 </script>
  
 <div class="test"></div> 
@@ -308,10 +309,9 @@
   // put your code here
 
 var currentImage = $('#kittenz-rule');
-$('#kittenz-rule').dblclick(function(){
-$("#kittenz-rule").attr("src","https://media.giphy.com/media/2uMnou4ve0U8M/giphy-facebook_s.jpg");
-}
-  )
+$('#kittenz-rule').dblclick(function() {
+    $("#kittenz-rule").attr("src", "https://media.giphy.com/media/2uMnou4ve0U8M/giphy-facebook_s.jpg");
+})
 
 </script>
 
@@ -346,12 +346,11 @@ $("#kittenz-rule").attr("src","https://media.giphy.com/media/2uMnou4ve0U8M/giphy
 
 <script>
 
-$('#make-a-porcupine').on('click',addImage);
+$('#make-a-porcupine').on('click', addImage);
 
-function addImage(){
-$('#cute-porcupine-image').show(1000);
+function addImage() {
+    $('#cute-porcupine-image').show(1000);
 }
-
   
 </script>
 
